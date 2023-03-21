@@ -1,0 +1,24 @@
+- model: films.movie
+  pk: 1
+  fields:
+    name: Pulp Fiction
+    year: 1984
+    description: blabl
+- model: films.movie
+  pk: 3
+  fields:
+    name: Return of the king
+    year: 2003
+    description: One ring rules them all
+- model: films.movie
+  pk: 4
+  fields:
+    name: IT
+    year: 2017
+    description: It
+- model: films.movie
+  pk: 5
+  fields:
+    name: Monty Python and the holy grail
+    year: 1975
+    description: shrubbery
