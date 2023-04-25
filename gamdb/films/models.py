@@ -2,8 +2,11 @@ from django.db import models
 
 class Movie(models.Model):
     name = models.CharField(max_length=200)
+    avg_rating = models.FloatField()
+    slug = models.SlugField()
     year = models.IntegerField(blank=True, null=True)
-    description = models.TextField()
+    image_url = models.CharField(max_length=225)
+    description = models.TextField(blank=True, null=True)
     director = models.ForeignKey('Director', blank=True, null=True, on_delete=models.SET_NULL)
     genres = models.ManyToManyField('Genre', blank=True)
 
@@ -15,6 +18,7 @@ class Movie(models.Model):
 
 class Director(models.Model):
     name = models.CharField(max_length=200)
+    slug = models.SlugField()
     birth_year = models.IntegerField(blank=True, null=True)
     
 
@@ -27,6 +31,18 @@ class Genre(models.Model):
     def __str__(self):
         return f"{self.name}"
 
+class coment(models.Model):
+    author = models.CharField(max_length=225)
+    text = models.TextField()
+    rting = models.IntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+class Actor(models.Model):
+    name = models.CharField(max_length=200)
+    slug = models.SlugField()
+    birth_year = models.IntegerField(blank=True, null=True)
+    photo_url = models.CharField(blank=True, null=True)
+    description = models.CharField(blank=True, null=True)
 
 "py -3 -m venv venv"
 "django-admin startproject"
@@ -42,3 +58,6 @@ class Genre(models.Model):
 "                 loaddata films.yaml"
 "                          fixtures/* "
 " python manage.py   .............   ./manage.py"
+"export PITHONIOENCODING=utf-8"
+"set                          "
+

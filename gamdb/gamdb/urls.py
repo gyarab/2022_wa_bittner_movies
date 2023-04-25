@@ -20,6 +20,8 @@ from films.views import homepage, movies, directors
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('reziseri/', directors, name="directors"),
-    path('filmy', movies, name="movies"),
-    path('', homepage, name="homepage")
+    path('filmy/', movies, name="movies"),
+    path('', homepage, name="homepage"),
+    path('filmy/<int id>', movies, name="movie"),
+    path('reziseri/<int id>', directors, name="director"),
 ]
