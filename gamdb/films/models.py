@@ -41,8 +41,8 @@ class Actor(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField()
     birth_year = models.IntegerField(blank=True, null=True)
-    photo_url = models.CharField(blank=True, null=True)
-    description = models.CharField(blank=True, null=True)
+    photo_url = models.CharField(max_length=200, blank=True, null=True)
+    description = models.CharField(max_length=200, blank=True, null=True)
 
 "py -3 -m venv venv"
 "django-admin startproject"

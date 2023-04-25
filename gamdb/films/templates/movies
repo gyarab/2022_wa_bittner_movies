@@ -7,6 +7,36 @@
 
 {% block content %}
 <h1>Filmy</h1>
+
+<form action="./" method="get">
+
+<div class="row">
+    <div class="input-group mb-3">
+        <input type="text" name="search" class="form-control" placeholder="..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">Hledat</button>
+        </div>
+      </div>
+</div>
+
+</form>
+
+<div class="row">
+    <ul class="list_inline">
+        <li class="list_inline_item">
+            <a href="./" class="btn btn_outline_secondary">all</a>
+        </li>
+        {%for g in genres%}
+        <li class="list_inline_item">
+            <a href="./?genre={{g.name}}" class="btn {% if g == genre %}btn-primary{%else%} btn_outline_secondary{%end if%}">{{g.name}}</a>
+        </li>
+        {% end for %}
+    </ul>
+</div>
+
+
+
+
 <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 g-2">
     {% for movie in movies %}
     <div class="col">
@@ -14,7 +44,10 @@
             <img class="card-img-top" src="https://place-hold.it/180x100/" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">{{ movie.name }}</h5>
-                <p class="card-text ">{{ movie.description }}</p>
+                {%for g in movie.genres.all%}
+                {{ g.name }}
+                {%end for%}
+                <p class="card-text ">{{ movie.description|truncatewords_html:"20" }}</p>
             </div>
             <div class="card-footer text-end">
                 <a href="#" class="btn btn-primary">Detaily</a>
