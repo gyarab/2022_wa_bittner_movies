@@ -28,9 +28,9 @@
         </li>
         {%for g in genres%}
         <li class="list_inline_item">
-            <a href="./?genre={{g.name}}" class="btn {% if g == genre %}btn-primary{%else%} btn_outline_secondary{%end if%}">{{g.name}}</a>
+            <a href="./?genre={{g.name}}" class="btn {% if g == genre %}btn-primary{%else%} btn_outline_secondary{%endif%}">{{g.name}}</a>
         </li>
-        {% end for %}
+        {% endfor %}
     </ul>
 </div>
 
@@ -46,11 +46,11 @@
                 <h5 class="card-title">{{ movie.name }}</h5>
                 {%for g in movie.genres.all%}
                 {{ g.name }}
-                {%end for%}
+                {%endfor%}
                 <p class="card-text ">{{ movie.description|truncatewords_html:"20" }}</p>
             </div>
             <div class="card-footer text-end">
-                <a href="#" class="btn btn-primary">Detaily</a>
+                <a href="{% url 'movie' movie.id %}" class="btn btn-primary">Detaily</a>
             </div>
         </div>
     </div>

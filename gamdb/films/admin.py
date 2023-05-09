@@ -8,6 +8,10 @@ class MovieAdmin(admin.ModelAdmin):
     search_fields = ['name', 'description']
     list_filter = ['genres']
 
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['author', 'rating', 'created_at']
+    list_display_links = ['author']
+    search_fields = ['author', 'rating']
 
 
 class DirectorAdmin(admin.ModelAdmin):

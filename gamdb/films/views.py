@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Movie, Genre
+from .models import Movie, Genre, Comment, Actor
 from django.db.models import Q
-
+from .forms import CommentForm
 def homepage(request):
     context = {
         
@@ -10,23 +10,22 @@ def homepage(request):
     }
     return render(request, 'homepage.html', context)
     #return HttpResponse("ahoj")
+
 def movies(request):
-    movie_querystring = Movie.objects.all
+    movies_queryset = Movie.objects.all()
 
     genre = request.GET.get('genre')
 
     if genre:
-        movie_querystring = movie_querystring.filter(genres__name=genre)
+        movies_queryset = movies_queryset.filter(genres__name=genre)
 
     search = request.GET.get('search')
 
     if search:
-        movie_querystring = movie_querystring.filter(
-            Q(name__icontains=search)|(description__icontains=search)
-            )
+        movies_queryset = movies_queryset.filter(Q(name__icontains=search)|Q(description__icontains=search))
 
     context = {
-        'movies': movie_querystring,
+        'movies': movies_queryset,
         'genres': Genre.objects.all().order_by('name'),
         'genre': genre,
         'search': search,
@@ -34,36 +33,52 @@ def movies(request):
     return render(request, 'movies.html', context)
 
 def movie(request, id):
+    m = Movie.objects.get(id=id)
+    form = CommentForm()
+
+    if request.POST:
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            c = Comment (movie=m, 
+                        author=form.cleaned_data['author'], 
+                        text = form.cleaned_data['text'], 
+                        rating = form.cleaned_data['rating']
+                        )
+            if not c.author:
+                c.author = 'anonym'
+            c.save()
+            form = CommentForm()
     context = {
-        
-        'movies': Movie.objects.get(id=id),
+        'form':form,
+        'movie': m,
+        'comments': Comment.objects.filter(movie=m).order_by('-created_at')
     }
     return render(request, 'movie.html', context)
 
 def directors(request):
     context = {
         
-        'movies': Movie.objects.all(),
+        'directors': Movie.objects.all(),
     }
     return render(request, 'directors.html', context)
 
 def director(request, id):
     context = {
         
-        'movies': Movie.objects.get(id=id),
+        'director': Movie.objects.get(id=id),
     }
     return render(request, 'director.html', context)
 
 def actors(request, id):
     context = {
         
-        'movies': Movie.objects.all
+        'actors': Movie.objects.all
     }
     return render(request, 'director.html', context)
 
 def actor(request, id):
     context = {
         
-        'movies': Movie.objects.get(id=id),
+        'actor': Movie.objects.get(id=id),
     }
     return render(request, 'director.html', context)

@@ -31,11 +31,12 @@ class Genre(models.Model):
     def __str__(self):
         return f"{self.name}"
 
-class coment(models.Model):
+class Comment(models.Model):
     author = models.CharField(max_length=225)
     text = models.TextField()
-    rting = models.IntegerField()
+    rating = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
+    movie = models.ForeignKey('Movie', blank=True, null=True, on_delete=models.SET_NULL)
 
 class Actor(models.Model):
     name = models.CharField(max_length=200)
