@@ -5,10 +5,25 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{movie.name}}</h1>
-<h2>{{movie.avg_rating}}</h2>
-<img src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="Card image cap">
-<p>{{ movie.description|safe }}</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{movie.name}}</h1>
+            <h3>Rating: {% if movie.avg_rating %}{{movie.avg_rating}}%{% else %}This movie hasn't been rated yet{% endif %}</h3>
+            
+            <p>{{ movie.description|safe }}</p>
+            
+        </div>
+        <div class="col-auto">
+            <img src="{% if movie.image_url %}{{movie.image_url}}{% else %}https://place-hold.it/180x100/{% endif %}" alt="here is image">
+        </div>
+
+
+</div>
+
+
+
+
 
 <div class="my-2">
     <p class="text-end">

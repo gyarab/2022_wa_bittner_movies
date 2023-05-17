@@ -8,7 +8,7 @@ class Movie(models.Model):
     image_url = models.CharField(max_length=225, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     director = models.ForeignKey('Director', blank=True, null=True, on_delete=models.SET_NULL)
-    genres = models.ManyToManyField('Genre', blank=True, null=True)
+    genres = models.ManyToManyField('Genre', blank=True)
 
     def __str__(self):
         return f"{self.name} ({self.year})"
@@ -20,7 +20,7 @@ class Director(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField()
     birth_year = models.IntegerField(blank=True, null=True)
-    
+    photo_url = models.CharField(max_length=225, blank=True, null=True)
 
     def __str__(self):
         return f"{self.name} ({self.birth_year})"
@@ -55,7 +55,7 @@ class Actor(models.Model):
 
 "python manage.py create superuser"
 "python manage.py runserver"
-"                 dumpdata -format yaml  films>films.yaml"
+"                 dumpdata --format yaml  films>films.yaml"
 "                 loaddata films.yaml"
 "                          fixtures/* "
 " python manage.py   .............   ./manage.py"

@@ -39,7 +39,18 @@ def movies(request):
 def movie(request, id):
     m = Movie.objects.get(id=id)
     form = CommentForm()
-
+    comments = Comment.objects.filter(movie=m).order_by('-created_at')
+    if comments:
+        i = 0
+        length = 0
+        for c in comments:
+            a = int(c.rating)
+            i = i+a
+            length = length+1
+        m.avg_rating = i/length
+    else:
+        m.avg_rating = None
+    
     if request.POST:
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -73,7 +84,7 @@ def director(request, id):
     }
     return render(request, 'director.html', context)
 
-def actors(request, id):
+def actors(request):
     context = {
         
         'actors': Actor.objects.all

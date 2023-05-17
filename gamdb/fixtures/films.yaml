@@ -6,22 +6,7 @@
     slug: '0'
     year: 1984
     image_url: '0'
-    description: "/%&&%*                                      \r\n                                  @@&&%(###,
-      \                                   \r\n                                 @@@@@&((/(#
-      \                                   \r\n                                 %@@&@#((((/*
-      \                                  \r\n                                  @&&#%##(((#
-      \                                  \r\n                                (@@&%%%%%%%##
-      \                                  \r\n                               ,&%&((%%%%%#@@&&&&&&(
-      \                           \r\n                           %&&&&&#&#*/*((/(&@&%&&&&&&
-      \                          \r\n                          &&&&&&&@&@&,,  ,.&&&&&&&&@@&
-      \                         \r\n                         #&@@@&&&&&&&&...,.&&&&&&&@@@@&
-      \                        \r\n                         &@@&@@&@&&&&&&,,.,&&@&&&@@@@@@&
-      \                       \r\n                        #&&&@@@@@@&&&@&&*./&@&&&@@@@@@@@@@
-      \                     \r\n                        &&&&&&@@@@@&&&&@&.%@&&&@@@@&@@&&&&&(
-      \                   \r\n                        @@&######&%%#@&&&@@@&&&@@@&
-      \ (@&&&&(//(                 \r\n                         ##%&##%&&%%%%%@///#&&@@@@&
-      \    %@%**//((*              \r\n                        %#%&#%#%(&#((/*(##@&&&&@@@@%
-      \      ##"
+    description: "something sometning"
     director: 5
     genres:
     - 5
@@ -197,7 +182,7 @@
 - model: films.comment
   pk: 1
   fields:
-    author: Matìj Bittner
+    author: Matï¿½j Bittner
     text: ''
     rating: 100
     created_at: 2023-05-17 07:26:36.643709+00:00
@@ -205,7 +190,7 @@
 - model: films.comment
   pk: 2
   fields:
-    author: Matìj Bittner
+    author: Matï¿½j Bittner
     text: ''
     rating: 100
     created_at: 2023-05-17 07:27:57.875954+00:00
@@ -213,7 +198,7 @@
 - model: films.comment
   pk: 3
   fields:
-    author: Matìj Bittner
+    author: Matï¿½j Bittner
     text: ''
     rating: 100
     created_at: 2023-05-17 07:39:08.860368+00:00

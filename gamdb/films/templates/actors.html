@@ -1,21 +1,21 @@
 {% extends 'main.html' %}
 
 {% block title %}
-    Režiséři | {{ block.super }}
+    Herci | {{ block.super }}
 {% endblock %}
 
 {% block content %}
-<h1>{{ title|default:"Režiséři" }}</h1>
+<h1>{{ title|default:"Herci" }}</h1>
 
     
     <div class="row row-cols-2  row-cols-md-3 row-cols-lg-4 g-2">
-        {% for d in directors %}
+        {% for a in actors %}
         <div class="col">
             <div class="card h-100">
-                <img class="card-img-top" src="{{d.photo_url}}" alt="here is image">
+                <img class="card-img-top" src="{{a.photo_url}}" alt="here is image">
                 <div class="card-body">
-                    <h5 class="card-title">{{ d.name }}</h5>
-                    <p class="card-text ">{{d.birth_year}}</p>
+                    <h5 class="card-title">{{ a.name }}</h5>
+                    <p class="card-text ">{{a.birth_year}}</p>
                 </div>
             </div>
         </div>

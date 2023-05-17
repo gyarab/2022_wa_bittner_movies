@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import Movie, Director, Genre
+from .models import Movie, Director, Genre, Comment, Actor
+
 
 class MovieAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'director', 'year', 'genres_display']
@@ -18,6 +19,11 @@ class DirectorAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'birth_year']
     list_display_links = ['name']
     search_fields = ['name', 'birth_year']
+    
+class ActorAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'birth_year']
+    list_display_links = ['name']
+    search_fields = ['name', 'birth_year']
 
 class GenreAdmin(admin.ModelAdmin):
     list_display = ['id', 'name']
@@ -27,3 +33,5 @@ class GenreAdmin(admin.ModelAdmin):
 admin.site.register(Movie, MovieAdmin)
 admin.site.register(Director, DirectorAdmin)
 admin.site.register(Genre, GenreAdmin)
+admin.site.register(Comment, CommentAdmin)
+admin.site.register(Actor, ActorAdmin)
