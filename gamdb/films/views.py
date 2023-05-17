@@ -1,12 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Movie, Genre, Comment, Actor
+from .models import Movie, Genre, Comment, Actor, Director
 from django.db.models import Q
 from .forms import CommentForm
+
 def homepage(request):
     context = {
         
-        'movies': Movie.objects.all(),
+        "movies": Movie.objects.all(),
+        "actors": Actor.objects.all(),
+        "directors": Director.objects.all(),
+        "genres": Genre.objects.all(),
     }
     return render(request, 'homepage.html', context)
     #return HttpResponse("ahoj")
@@ -58,27 +62,27 @@ def movie(request, id):
 def directors(request):
     context = {
         
-        'directors': Movie.objects.all(),
+        'directors': Director.objects.all(),
     }
     return render(request, 'directors.html', context)
 
 def director(request, id):
     context = {
         
-        'director': Movie.objects.get(id=id),
+        'director': Director.objects.get(id=id),
     }
     return render(request, 'director.html', context)
 
 def actors(request, id):
     context = {
         
-        'actors': Movie.objects.all
+        'actors': Actor.objects.all
     }
-    return render(request, 'director.html', context)
+    return render(request, 'actors.html', context)
 
 def actor(request, id):
     context = {
         
-        'actor': Movie.objects.get(id=id),
+        'actor': Actor.objects.get(id=id),
     }
-    return render(request, 'director.html', context)
+    return render(request, 'actor.html', context)
