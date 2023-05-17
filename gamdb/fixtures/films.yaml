@@ -1,221 +1,236 @@
-[
-{
-     "model": "films.movie",
-     "pk": 1,
-     "fields": {
-          "name": "Pulp Fiction",
-          "year": 1984,
-          "description": "/%&&%*                                      \r\n                                  @@&&%(###,                                    \r\n                                 @@@@@&((/(#                                    \r\n                                 %@@&@#((((/*                                   \r\n                                  @&&#%##(((#                                   \r\n                                (@@&%%%%%%%##                                   \r\n                               ,&%&((%%%%%#@@&&&&&&(                            \r\n                           %&&&&&#&#*/*((/(&@&%&&&&&&                           \r\n                          &&&&&&&@&@&,,  ,.&&&&&&&&@@&                          \r\n                         #&@@@&&&&&&&&...,.&&&&&&&@@@@&                         \r\n                         &@@&@@&@&&&&&&,,.,&&@&&&@@@@@@&                        \r\n                        #&&&@@@@@@&&&@&&*./&@&&&@@@@@@@@@@                      \r\n                        &&&&&&@@@@@&&&&@&.%@&&&@@@@&@@&&&&&(                    \r\n                        @@&######&%%#@&&&@@@&&&@@@&  (@&&&&(//(                 \r\n                         ##%&##%&&%%%%%@///#&&@@@@&     %@%**//((*              \r\n                        %#%&#%#%(&#((/*(##@&&&&@@@@%       ##",
-          "director": 5,
-          "genres": [
-               5,
-               6
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 3,
-     "fields": {
-          "name": "Return of the king",
-          "year": 2003,
-          "description": "One ring rules them all",
-          "director": 4,
-          "genres": [
-               3
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 4,
-     "fields": {
-          "name": "IT",
-          "year": 2017,
-          "description": "It",
-          "director": 3,
-          "genres": [
-               4
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 5,
-     "fields": {
-          "name": "Monty Python and the holy grail",
-          "year": 1975,
-          "description": "shrubbery",
-          "director": 2,
-          "genres": [
-               1,
-               3
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 6,
-     "fields": {
-          "name": "Monty Python's Life of Brian",
-          "year": 1979,
-          "description": "he is the messiah",
-          "director": 2,
-          "genres": [
-               1
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 7,
-     "fields": {
-          "name": "Monty Python's The Meaning of Life",
-          "year": 1983,
-          "description": "every sperm is sacred",
-          "director": 2,
-          "genres": [
-               1,
-               3
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 8,
-     "fields": {
-          "name": "Harry Potter and the Philosopher's Stone",
-          "year": 2001,
-          "description": "first",
-          "director": 1,
-          "genres": [
-               2,
-               3
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 9,
-     "fields": {
-          "name": "Harry Potter and the Chamber of Secrets",
-          "year": 2002,
-          "description": "second",
-          "director": 1,
-          "genres": [
-               2,
-               3
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 10,
-     "fields": {
-          "name": "Harry Potter and the Prisoner of Azkaban",
-          "year": 2004,
-          "description": "third",
-          "director": 1,
-          "genres": [
-               2,
-               3
-          ]
-     }
-},
-{
-     "model": "films.movie",
-     "pk": 11,
-     "fields": {
-          "name": "Harry Potter and the Goblet of Fire",
-          "year": 2005,
-          "description": "forth",
-          "director": 1,
-          "genres": [
-               2,
-               3
-          ]
-     }
-},
-{
-     "model": "films.director",
-     "pk": 1,
-     "fields": {
-          "name": "Chris Columbus",
-          "birth_year": 1958
-     }
-},
-{
-     "model": "films.director",
-     "pk": 2,
-     "fields": {
-          "name": "Terry Jones",
-          "birth_year": 1942
-     }
-},
-{
-     "model": "films.director",
-     "pk": 3,
-     "fields": {
-          "name": "Andy Muschietti",
-          "birth_year": 1973
-     }
-},
-{
-     "model": "films.director",
-     "pk": 4,
-     "fields": {
-          "name": "Peter Jackson",
-          "birth_year": 1961
-     }
-},
-{
-     "model": "films.director",
-     "pk": 5,
-     "fields": {
-          "name": "Quentin Tarantino",
-          "birth_year": 1963
-     }
-},
-{
-     "model": "films.genre",
-     "pk": 1,
-     "fields": {
-          "name": "Comedy"
-     }
-},
-{
-     "model": "films.genre",
-     "pk": 2,
-     "fields": {
-          "name": "Adolescent"
-     }
-},
-{
-     "model": "films.genre",
-     "pk": 3,
-     "fields": {
-          "name": "Fantasy"
-     }
-},
-{
-     "model": "films.genre",
-     "pk": 4,
-     "fields": {
-          "name": "horror"
-     }
-},
-{
-     "model": "films.genre",
-     "pk": 5,
-     "fields": {
-          "name": "drama"
-     }
-},
-{
-     "model": "films.genre",
-     "pk": 6,
-     "fields": {
-          "name": "krimi"
-     }
-}
-]
+- model: films.movie
+  pk: 1
+  fields:
+    name: Pulp Fiction
+    avg_rating: 3.0
+    slug: '0'
+    year: 1984
+    image_url: '0'
+    description: "/%&&%*                                      \r\n                                  @@&&%(###,
+      \                                   \r\n                                 @@@@@&((/(#
+      \                                   \r\n                                 %@@&@#((((/*
+      \                                  \r\n                                  @&&#%##(((#
+      \                                  \r\n                                (@@&%%%%%%%##
+      \                                  \r\n                               ,&%&((%%%%%#@@&&&&&&(
+      \                           \r\n                           %&&&&&#&#*/*((/(&@&%&&&&&&
+      \                          \r\n                          &&&&&&&@&@&,,  ,.&&&&&&&&@@&
+      \                         \r\n                         #&@@@&&&&&&&&...,.&&&&&&&@@@@&
+      \                        \r\n                         &@@&@@&@&&&&&&,,.,&&@&&&@@@@@@&
+      \                       \r\n                        #&&&@@@@@@&&&@&&*./&@&&&@@@@@@@@@@
+      \                     \r\n                        &&&&&&@@@@@&&&&@&.%@&&&@@@@&@@&&&&&(
+      \                   \r\n                        @@&######&%%#@&&&@@@&&&@@@&
+      \ (@&&&&(//(                 \r\n                         ##%&##%&&%%%%%@///#&&@@@@&
+      \    %@%**//((*              \r\n                        %#%&#%#%(&#((/*(##@&&&&@@@@%
+      \      ##"
+    director: 5
+    genres:
+    - 5
+    - 6
+- model: films.movie
+  pk: 3
+  fields:
+    name: Return of the king
+    avg_rating: 3.0
+    slug: '0'
+    year: 2003
+    image_url: '0'
+    description: One ring rules them all
+    director: 4
+    genres:
+    - 3
+- model: films.movie
+  pk: 4
+  fields:
+    name: IT
+    avg_rating: 3.0
+    slug: '0'
+    year: 2017
+    image_url: '0'
+    description: It
+    director: 3
+    genres:
+    - 4
+- model: films.movie
+  pk: 5
+  fields:
+    name: Monty Python and the holy grail
+    avg_rating: 3.0
+    slug: '0'
+    year: 1975
+    image_url: '0'
+    description: shrubbery
+    director: 2
+    genres:
+    - 1
+    - 3
+- model: films.movie
+  pk: 6
+  fields:
+    name: Monty Python's Life of Brian
+    avg_rating: 3.0
+    slug: '0'
+    year: 1979
+    image_url: '0'
+    description: he is the messiah
+    director: 2
+    genres:
+    - 1
+    - 3
+- model: films.movie
+  pk: 7
+  fields:
+    name: Monty Python's The Meaning of Life
+    avg_rating: 3.0
+    slug: '0'
+    year: 1983
+    image_url: '0'
+    description: every sperm is sacred
+    director: 2
+    genres:
+    - 1
+- model: films.movie
+  pk: 8
+  fields:
+    name: Harry Potter and the Philosopher's Stone
+    avg_rating: 3.0
+    slug: '0'
+    year: 2001
+    image_url: '0'
+    description: first
+    director: 1
+    genres:
+    - 2
+    - 3
+- model: films.movie
+  pk: 9
+  fields:
+    name: Harry Potter and the Chamber of Secrets
+    avg_rating: 3.0
+    slug: '0'
+    year: 2002
+    image_url: '0'
+    description: second
+    director: 1
+    genres:
+    - 2
+    - 3
+- model: films.movie
+  pk: 10
+  fields:
+    name: Harry Potter and the Prisoner of Azkaban
+    avg_rating: 3.0
+    slug: '0'
+    year: 2004
+    image_url: '0'
+    description: third
+    director: 1
+    genres:
+    - 2
+    - 3
+- model: films.movie
+  pk: 11
+  fields:
+    name: Harry Potter and the Goblet of Fire
+    avg_rating: 3.0
+    slug: '0'
+    year: 2005
+    image_url: '0'
+    description: forth
+    director: 1
+    genres:
+    - 2
+    - 3
+- model: films.director
+  pk: 1
+  fields:
+    name: Chris Columbus
+    slug: '0'
+    birth_year: 1958
+- model: films.director
+  pk: 2
+  fields:
+    name: Terry Jones
+    slug: '0'
+    birth_year: 1942
+- model: films.director
+  pk: 3
+  fields:
+    name: Andy Muschietti
+    slug: '0'
+    birth_year: 1973
+- model: films.director
+  pk: 4
+  fields:
+    name: Peter Jackson
+    slug: '0'
+    birth_year: 1961
+- model: films.director
+  pk: 5
+  fields:
+    name: Quentin Tarantino
+    slug: '0'
+    birth_year: 1963
+- model: films.genre
+  pk: 1
+  fields:
+    name: Comedy
+- model: films.genre
+  pk: 2
+  fields:
+    name: Adolescent
+- model: films.genre
+  pk: 3
+  fields:
+    name: Fantasy
+- model: films.genre
+  pk: 4
+  fields:
+    name: horror
+- model: films.genre
+  pk: 5
+  fields:
+    name: drama
+- model: films.genre
+  pk: 6
+  fields:
+    name: krimi
+- model: films.comment
+  pk: 1
+  fields:
+    author: Matìj Bittner
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:26:36.643709+00:00
+    movie: 5
+- model: films.comment
+  pk: 2
+  fields:
+    author: Matìj Bittner
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:27:57.875954+00:00
+    movie: 5
+- model: films.comment
+  pk: 3
+  fields:
+    author: Matìj Bittner
+    text: ''
+    rating: 100
+    created_at: 2023-05-17 07:39:08.860368+00:00
+    movie: 5
+- model: films.comment
+  pk: 4
+  fields:
+    author: Pepa z Depa
+    text: ''
+    rating: 50
+    created_at: 2023-05-17 07:40:03.833955+00:00
+    movie: 5
+- model: films.comment
+  pk: 5
+  fields:
+    author: anonym
+    text: ''
+    rating: null
+    created_at: 2023-05-17 07:46:51.423171+00:00
+    movie: 5
