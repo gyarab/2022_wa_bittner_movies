@@ -17,6 +17,9 @@
                     <h5 class="card-title">{{ d.name }}</h5>
                     <p class="card-text ">{{d.birth_year}}</p>
                 </div>
+                <div class="card-footer text-end">
+                    <a href="{% url 'director' d.id %}" class="btn btn-primary">Detaily</a>
+                </div>
             </div>
         </div>
             

@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    {{actor.name}} | {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1>{{actor.name}}</h1>
+           <h3>Filmy:
+            {%for f in films%}
+            <a href="{% url 'movie' f.id %}" class="link-dark link-opacity-50-hover link-underline-opacity-25" >{{ f.name }}</a>
+            {%endfor%}
+            </h3>
+            <p>{{ actor.description|safe }}</p>
+            
+        </div>
+        <div class="col-auto">
+            <img src="{% if actor.photo_url %}{{actor.photo_url}}{% else %}https://place-hold.it/300x400/{% endif %}" alt="here is image" width="300" height="400">
+        </div>
+
+
+</div>
+
+
+{% endblock content %}

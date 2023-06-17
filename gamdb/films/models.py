@@ -7,7 +7,8 @@ class Movie(models.Model):
     year = models.IntegerField(blank=True, null=True)
     image_url = models.CharField(max_length=225, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    director = models.ForeignKey('Director', blank=True, null=True, on_delete=models.SET_NULL)
+    director = models.ManyToManyField('Director', blank=True)
+    actor = models.ManyToManyField('Actor', blank=True)
     genres = models.ManyToManyField('Genre', blank=True)
 
     def __str__(self):
@@ -21,6 +22,7 @@ class Director(models.Model):
     slug = models.SlugField()
     birth_year = models.IntegerField(blank=True, null=True)
     photo_url = models.CharField(max_length=225, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.name} ({self.birth_year})"
@@ -43,8 +45,11 @@ class Actor(models.Model):
     slug = models.SlugField()
     birth_year = models.IntegerField(blank=True, null=True)
     photo_url = models.CharField(max_length=200, blank=True, null=True)
-    description = models.TextField(max_length=200, blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
 
+    def __str__(self):
+        return f"{self.name}"
+    
 "py -3 -m venv venv"
 "django-admin startproject"
 "              startapp"

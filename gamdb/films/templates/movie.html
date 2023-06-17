@@ -10,7 +10,23 @@
         <div class="col">
             <h1>{{movie.name}}</h1>
             <h3>Rating: {% if movie.avg_rating %}{{movie.avg_rating}}%{% else %}This movie hasn't been rated yet{% endif %}</h3>
+            <h3> Žánry:
+                {%for g in movie.genres.all%}
+                {{ g.name }}
+                {%endfor%}
+            </h3>
+            <h3> Režisér:
+                {%for d in movie.director.all%}
+                <a href="{% url 'director' d.id %}" class="link-dark link-opacity-50-hover link-underline-opacity-25" >{{ d.name }}</a>
+                {%endfor%}
+            </h3>
+            <h3> Herci:
+                {%for a in movie.actor.all%}
+                <a href="{% url 'actor' a.id %}" class="link-dark link-opacity-50-hover link-underline-opacity-25" >{{ a.name }}</a>
+                {%endfor%}
+            </h3>
             
+            <P>{{movie.ac}}
             <p>{{ movie.description|safe }}</p>
             
         </div>

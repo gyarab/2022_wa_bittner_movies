@@ -78,9 +78,12 @@ def directors(request):
     return render(request, 'directors.html', context)
 
 def director(request, id):
+    
+    d = Director.objects.get(id=id)
+    
     context = {
-        
-        'director': Director.objects.get(id=id),
+        'films': Movie.objects.filter(director__id=id),
+        'director': d
     }
     return render(request, 'director.html', context)
 
@@ -92,8 +95,11 @@ def actors(request):
     return render(request, 'actors.html', context)
 
 def actor(request, id):
+    
+    a = Actor.objects.get(id=id)
+    
     context = {
-        
-        'actor': Actor.objects.get(id=id),
+        'films': Movie.objects.filter(actor__id=id),
+        'actor': a
     }
     return render(request, 'actor.html', context)
