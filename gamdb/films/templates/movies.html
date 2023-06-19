@@ -41,7 +41,7 @@
     {% for movie in movies %}
     <div class="col">
         <div class="card bg-light h-100">
-            <img class="card-img-top" src="{{movie.image_url}}" alt="here is image">
+            <img width="300" height="450" class="card-img-top"  src="{{movie.image_url}}" alt="here is image">
             <div class="card-body">
                 <h5 class="card-title">{{ movie.name }}</h5>
                 {%for g in movie.genres.all%}
