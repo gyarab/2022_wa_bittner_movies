@@ -1,7 +1,10 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<div class="d-flex justify-content-center">
-<h1>Filmová databáze GYARAB</h1>
-</div>
+
+<div style="margin:auto; width:fit-content; padding:10px;"> <h1 > Filmová databáze GYARAB</h1> </div>
+<div style="margin:auto; width:fit-content; padding:10px;"> <a  href="{% url 'movies' %}">Filmy</a> </div>
+<div style="margin:auto; width:fit-content; padding:10px;"> <a  href="{% url 'directors' %}">Režiséři</a> </div>
+<div style="margin:auto; width:fit-content; padding:10px;"> <a  href="{% url 'actors' %}">Herci</a> </div>
+
 {% endblock %}

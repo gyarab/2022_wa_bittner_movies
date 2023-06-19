@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="films.movie" pk="1">
+    <field name="name" type="CharField">Pulp Fiction</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">1984</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vYyDBciwC3gNybMs_1WeCs5eQdVxjLWeUxAdhl3blk99WjNqOhkFFn36fMvstgPlVbQ&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Nejkultovnější z kultovních filmů 90. let je autorskou Biblí Quentina Tarantina, který v tomto opusu definoval základní prvky své režisérské poetiky a vytvořil dílo rozněcující náročné kritiky na festivalu v Cannes, levicové a pravicové intelektuály i zedníky dopřávající si po těžké šichtě trochu oddychu. Pulp Fiction je multižánrovým opusem, který přetéká fetišistickými detaily a popkulturními odkazy a zároveň dokonale funguje jako svrchovaně napínavý film rozvržený do inovativní příběhové struktury. Chcete vidět homosexuální znásilnění sbližující dva nepřátele na život a na smrt? (AČFK)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="5"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="1"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="5"></object><object pk="6"></object></field>
+  </object>
+  <object model="films.movie" pk="3">
+    <field name="name" type="CharField">Return of the king</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">2003</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTnoo287iFMJQQImtuPzC4vjeB52BgazfbgayNT1JebfhXKWzPeQwbjGnlN1Mmb5C7wW0&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Nadchází čas rozhodující bitvy o přežití Středozemě. Putování jednotlivých členů Společenstva prstenu se dostává do poslední a rozhodující fáze. Čaroděj Gandalf, elf Legolas a trpaslík Gimli spěchají s dědicem trůnu Aragornem na pomoc zemi Gondor, která odolává ohromnému Sauronovu vojsku. Hobiti Frodo a Sam se v doprovodu Gluma snaží dostat hluboko do země Mordor, kde musí v ohních Hory osudu zničit magický Prsten moci. Jedině tak bude síla mocného pána temnot Saurona zlomena. Podaří se jim naplnit poslání Společenstva a zachránit Středozem? A za jakou cenu? (Magic Box)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="4"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="2"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="3"></object></field>
+  </object>
+  <object model="films.movie" pk="4">
+    <field name="name" type="CharField">IT</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">2017</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uXRfQ3YXkzWiZpfW4fo8gFAM1Bqofz-mk7ILXkerSLB6cmuZvWqxbcXRmyYOS2y3OTI&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Když ve městě Derry ve státě Maine začnou mizet děti, musí skupina mladých chlapců a děvčat čelit svým největším obavám v boji proti zlému klaunovi jménem Pennywise, jehož vražedná a násilnická historie se táhne napříč staletími. (Vertical Ent.)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="3"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="4"></object></field>
+  </object>
+  <object model="films.movie" pk="5">
+    <field name="name" type="CharField">Monty Python and the holy grail</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">1975</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEbxzOnG27BrkkvT6K97qbRo7nDQIydqjoA&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Kráľ Artuš sa vydáva so svojím sluhom na púť naprieč Britániou, aby okolo seba zhromaždil najlepších rytierov a priviedol ich do zámku Kamelot. Keď sa mu podarí vybrať si najudatnejších a najlegendárnejších hrdinov rytierskych legiend, zjaví sa mu Boh, ktorý ho poverí svätou úlohou - nájsť svätý Grál. Tak sa udatná skupina vydáva na strastiplnú cestu za touto posvätnou relikviou. Výrazné postavy sa na cestách stretávajú s podivnými prekážkami a bizarnými postavami, aby nakoniec dospeli do veľkolepého a prekvapivého konca. Film je mozaikov rôznych skečov a vydarených scénok, ktoré podávajú veľmi netradičný pohľad na dobre známu anglickú legendu o kráľovi Artušovi a rytieroch okrúhleho stola. (Jordan)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="2"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="3"></object><object pk="5"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="1"></object><object pk="3"></object></field>
+  </object>
+  <object model="films.movie" pk="6">
+    <field name="name" type="CharField">Monty Python's Life of Brian</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">1979</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyNBmMJ7mTbd3P0jPslo6SO-E4qTerd3R2VA&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Ve své době vyvolal Život Briana skandál kvůli neúctě k církvi, dnes zbyl velice zábavný snímek parodující příběh o Ježíši. Brian se totiž narodil ve stejný den jako Mesiáš, se kterým si ho všichni pletou a způsobují tak spoustu absurdních gagů. Hlavní hrdina se připojuje k Lidové frontě Judee, aby pomohl svou zemi osvobodit od nadvlády Římanů. A to i přesto, že Římani dali Židům vodovod, silnice, pořádek, kanalizace, školství, víno...To je snad bez debat, ne? Šestice z Monty Python se tu objevuje hned v několika rolích. Graham Chapman hraje nejen Briana ale i Pya Čůra, Michael Palin se objevuje v roli Piláta i soucitného dozorce vydávajícího kříže odsouzencům na smrt atd. Známým vtipálkům při natáčení posloužily dokonce i marocké kulisy Hvězdných válek. (Jinny)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="2"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="5"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="1"></object><object pk="3"></object></field>
+  </object>
+  <object model="films.movie" pk="7">
+    <field name="name" type="CharField">Monty Python's The Meaning of Life</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">1983</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqyzB0qJkYzsux_Fja_njeFcYz5Ikrqv4xWA&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Komedie strašlivá o prvních, druhých, třetích až posledních věcech člověka... V pořadí třetí a také poslední celovečerní film legendární skupiny Monty Python je sledem skečů volně propojených tématem života a smrti. A ač je především určen rybám, pokrývá veškerou škálu lidské zkušenosti. Od narození zdánlivě bezvýznamného dítěte (zejména z pohledu tresky), přes problém přemnožení katolíků, mužského zrání v hodinách sexuální výchovy, dospívání na bojištích 1. světové a zulské války, po problém ztráty končetin a dárcovství orgánů, až dospěje ke konečné otravě rybou a k tomu co následuje. To vše sepsáno a sehráno šesticí herců – autorů Monty Pythonova Létajícího cirkusu v režii Terryho Jonese a s animací Terryho Gilliama. (Česká televize)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="2"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="3"></object><object pk="5"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="1"></object></field>
+  </object>
+  <object model="films.movie" pk="8">
+    <field name="name" type="CharField">Harry Potter and the Philosopher's Stone</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">2001</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvdNekBsqem_jpO6Hi8hzVSi_v97R54JPK2g&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Před deseti lety položili čarodějové Brumbál, Hagrid a McGonagallová na práh domu Vernona a Petunie Dursleyových miminko s jizvou na čele. Je to malý Harry Potter, syn Petuniiny zemřelé sestry. Dursleyovi se o něj sice starají, na rozdíl od vlastního syna Dudleyho mu však neprojevují příliš lásky. Když se blíží Harryho jedenácté narozeniny, zjistí ke svému překvapení, že dokáže mluvit s hadem. V den narozenin mu čaroděj Hagrid doručí dort a dopis. Harry se dozví, že jeho rodiče byli čarodějové a nezahynuli při obyčejné autonehodě, ale v boji se zlým Voldemortem. Jizvu na čele si odnesl z tohoto boje. Nyní má právo nastoupit do učení ve Škole kouzel a čar v Bradavicích. Hagrid mu pomůže nakoupit školní pomůcky, včetně kouzelnické hůlky, a potom ho pošle na nádraží, kde z tajného nástupiště 9 3/4 odjíždí expres do Bradavic. Ve vlaku se Harry skamarádí se sympatickou Hermionou a dobráckým Ronem. Společně se pak dostanou na prestižní kolej Nebelvíru. Díky mimořádnému talentu k létání se stane novým chytačem nebelvírského famfrpálového mužstva. Po zápasu čeká žáky Vánoční volno, kterého Harry, Ron a Hermiona využijí k pátrání po tajemství, které střeží v podzemí školy trojhlavý pes. (TV Nova)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="1"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="4"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="2"></object><object pk="3"></object></field>
+  </object>
+  <object model="films.movie" pk="9">
+    <field name="name" type="CharField">Harry Potter and the Chamber of Secrets</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">2002</field>
+    <field name="image_url" type="CharField">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE2K9miXz2UwkJGZiSVFGDTW3rdjBKvuUKBhujEZlhO-9cke1O3_sufuvEj7ceR3NAVyc&amp;usqp=CAU</field>
+    <field name="description" type="TextField">Malý čaroděj Harry Potter je nucen trávit prázdniny u zlých příbuzných. Pomůže mu kamarád Ron, který ho přiletí v otcově létajícím autě zachránit. Máma jim sice vynadá, ale je ráda, že je Harry s nimi. Když mají později odjet do školy, nepodaří se jim projít zdí na nástupiště 9 3/4 , odkud odjíždí vlak do Bradavic. Vezmou tedy létající auto pana Weasleye a poněkud tvrdě nouzově přistanou ve větvích Vrby mlátičky. Ron na to doplatí zlomenou hůlkou. V Bradavicích se na stěně objeví rudý nápis, který hlásá, že Tajemná komnata je znovu otevřena a nepřátelé dědice by se měli bát. Kdysi se jeden ze čtveřice zakladatelů školy, čaroděj Salazar Zmijozel, nepohodl s ostatními a odešel. Ještě předtím vybudoval tajemnou komnatu, kterou prý otevře jeho dědic a vypustí zlo, jež zahubí všechny nečistokrevné kouzelníky. Při souboji s Dracem se při hodině obrany proti černé magii ukáže, že Harry rozumí hadí řeči, a ostatní ho začnou podezřívat, že právě on by mohl být Zmijozelovým potomkem, který otevřel tajemnou komnatu. Harry najde kouzelný deník Toma Raddlea, který ho zavede padesát let do minulosti, kdy byla komnata otevřena poprvé. Tehdy byl podezřelý Hagrid. Staré podezření se vynoří i tentokrát a Hagrid skončí ve vězení v Azkabanu... (TV Nova)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="1"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="4"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="2"></object><object pk="3"></object></field>
+  </object>
+  <object model="films.movie" pk="10">
+    <field name="name" type="CharField">Harry Potter and the Prisoner of Azkaban</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">2004</field>
+    <field name="image_url" type="CharField">https://static.posters.cz/image/1300/art-photo/harry-potter-vezen-z-azkabanu-i105075.jpg</field>
+    <field name="description" type="TextField">Třetí školní rok nezačíná pro Harryho nejlépe. Nejprve poruší zákaz kouzlení mimo školu, když se nechá vyprovokovat urážkami strýcovy sestry Marge na adresu svých rodičů. Když pak odejde od Dursleyových a záchranným autobusem se dopraví do hostince Děravý kotel, setká se sice s Hermionou a Ronem, také se však dozví, že z azkabanského vězení uprchl nebezpečný Sirius Black a že to má něco společného s ním. Co, to mu však nikdo nechce říci. Nakonec se málem stane obětí azkabanských strážců mozkomorů, kteří prohledávají bradavický vlak. Zachrání ho muž podřimující v kupé, který se představí jako profesor Lupin. Jak se ukáže, je novým učitelem obrany proti černé magii. Další změnou je jmenování Hagrida učitelem péče o kouzelné tvory. Školní rok probíhá v napjaté atmosféře, protože kolem školy krouží mozkomoři, kteří ji mají chránit a pátrat po Blackovi. Po značných komplikacích Harry zjistí, že Black byl přítelem jeho rodičů a je jeho kmotr, údajně to však byl on, kdo jeho rodiče vydal Voldemortovi a zabil kouzelníka Petera Petigrewa, který se je pokusil chránit. Situace se dramaticky vyhrotí, když se velký černý pes zmocní Rona a odvleče ho tajnou chodbou do Chroptící chýše. Když se však Harrymu a Herminoně podaří proniknout za nimi, čeká je nejedno šokující překvapení. (TV Nova)</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="1"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="4"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="2"></object><object pk="3"></object></field>
+  </object>
+  <object model="films.movie" pk="11">
+    <field name="name" type="CharField">Harry Potter and the Goblet of Fire</field>
+    <field name="avg_rating" type="FloatField">3.0</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="year" type="IntegerField">2005</field>
+    <field name="image_url" type="CharField">https://static.wikia.nocookie.net/qghficsimjkaeibhfztnpjrqiezhzuadzsjxwpnxusefbthfes/images/4/4a/35FFD453-DFDD-4C2C-93C2-FDE66CCB14D6.webp/revision/latest?cb=20210812224339</field>
+    <field name="description" type="TextField">Navzdory zlým snům, které ho nepřestávají pronásledovat, vydá se Harry s Weasleyovými na čtyřsté dvacáté druhé famfrpálové mistrovství světa. Slavnostní zahájení je velkolepé, v noci však kemp přepadne skupina maskovaných čarodějů, kteří vyvolávají paniku a na obloze vykouzlí obrovskou lebku s hadem v ústech. Znamení Voldemortovo. Je jasné, že se blíží temná doba. Je to zřejmé i z faktu, že se tu bude konat významný Turnaj tří kouzelníků, jehož vítěz získá Ohnivý pohár. Do soutěže se smějí přihlásit pouze kouzelníci starší sedmnácti let. Do Bradavic přijíždí nejen nový učitel obrany proti černé magii Alostor Moody, ale také výpravy ze dvou dalších evropských kouzelnických škol. Zatímco se napjatě čeká na trojici, kterou pohár vybere, začíná vyučování. Moody dává od první hodiny jasně najevo, že bere obranu proti černé magii vážně. Nastává slavnostní okamžik. Pohár vybere do turnaje Cedrica, Viktora a Fleur. K úžasu všech určí ještě Harryho, i když mu ještě není sedmnáct. Podle pravidel se musí turnaje zúčastnit, protože byl pohárem vybrán. Harry zjistí, že prvním úkolem bude získat zlaté vejce, střežené drakem. Kolegiálně to prozradí Cedricovi a oběma se to v napínavém souboji podaří stejně jako Viktorovi a Fleur. Zatímco se chystají na druhý úkol, blíží se velký Vánoční ples. A to ještě netuší, že se závěrečný úkol turnaje změní v děsivou noční můru, která bude někoho stát život</field>
+    <field name="director" rel="ManyToManyRel" to="films.director"><object pk="1"></object></field>
+    <field name="actor" rel="ManyToManyRel" to="films.actor"><object pk="4"></object></field>
+    <field name="genres" rel="ManyToManyRel" to="films.genre"><object pk="2"></object><object pk="3"></object></field>
+  </object>
+  <object model="films.director" pk="1">
+    <field name="name" type="CharField">Chris Columbus</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1958</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/000/269/269568_787b33.jpg</field>
+    <field name="description" type="TextField">Americký režisér a scénárista. Vyrůstal v Ohiu jako jediný syn horníka. Po maturitě na Spielberg school of Genre movie making se pokoušel uplatnit jako kreslíř v Marvel Comics a posléze zjistil, že komiks nemá daleko k vytváření filmových scénářů. Vystudoval režii na prestižní Tisch School of the Arts.
+
+
+
+Ve filmovém světě nejprve získával úspěchy jako autor scénářů. Po škole začal psát scénáře pro Stevena Spielberga. V roce 1984 vznikl film GREMLINS, v roce 1985 pak filmy GOONIES a MLADÝ SHERLOCK HOLMES. Debutoval filmem NOČNÍ DOBRODRUŽSTVÍ (1987).
+
+
+
+Brzy poté se seznámil s producentem Johnem Hughesem a jako režisér začal pracovat na úspěšné komedii SÁM DOMA (1990). Příběh o chlapci, kterého rodiče zapomenou přes Vánoce doma samotného, se stal jednou z nejpopulárnějších rodinných komedií v historii. Druhý díl na sebe přirozeně nenechal dlouho čekat. Mimořádný úspěch zaznamenal i v roce 1993 s filmem MRS. DOUBTFIRE - TÁTA V SUKNÍCH - další rodinnou podívanou, kde v roli otce-paní na hlídání exceluje Robin Williams.
+
+
+
+V roku 1998 vzniklo rodinné drama DRUHÁ NEBO PRVNÍ, kde se spolu sešli Ed Harris, Julia Robertsová a Susan Sarandonová. Osvědčený řemeslník Columbus sice nevyniká přílišnou originalitou, ale když se drží svých zábavou a hodnotami prodchnutých komedií, obvykle spolehlivě zaskóruje. V roce 2001 natočil svůj zatím nejúspěšnější film HARRY POTTER A KÁMEN MUDRCŮ, na který o rok později navázal filmem HARRY POTTER A TAJEMNÁ KOMNATA.</field>
+  </object>
+  <object model="films.director" pk="2">
+    <field name="name" type="CharField">Terry Jones</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1942</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/000/269/269440_9ebaee.jpg</field>
+    <field name="description" type="TextField">Asi nejdůležitějším životním seznámením Terryho Jonese bylo to s Michaelem Palinem. Setkali se v Oxfordu, když pracovali na jedné z tamějších revuí. Oba se pak dostali do BBC a začali psát scénky pro THE FROST REPORT a pro komika Martyho Feldmana. Poté se dali dohomady s Davidem Jasonem a Ericem Idlem a společně vytvořili dětský pořad DO NOT ADJUST YOUR SET, který byl však plný anarchistickýh skečů. Brzy nato se scénáristické duo Jones/Palin splou s Ericem Idlem seznámilo s jiným povedeným duem Chapman/Cleese. Do party přibyl ještě animátor Terry Gilliam. A tak mohl vypuknout MONTY PYTHONŮV LÉTAJÍCÍ CIRKUS.
+
+
+
+Jones byl podle Michaela Palina tím, který skupinu posouval kupředu. Často se pohádal s Johnem Cleesem, protože podle Cleese Jones vše prožíval emotivně, kdežto on spíš intelektem. Přesto zůstala skupina po celou dobu dobrými přáteli.
+
+
+
+V roce 1975 natočil Jones spolu s Gilliamem MONTY PYTHON A SVATÝ GRÁL. Práci si rozdělili: Gilliam si vzal na starost vizuální prvky a Jones pracoval s herci. Navíc si zde zahrál sira Bedevera. Po definitivním rozpadu skupiny napsal s Palinem seriál NESKUTEČNÉ HISTORKY a publikoval seriózní studii o středověkém spisovateli Geoffreym Chaucerovi. Zahrál si i Gilliamově ŽVAHLAVOVI. Poté přišla další pythonovská režie ŽIVOTA BRIANA, kde navíc vytvořil postavu Panny Mandy Cohenové, asi svou nejslavnější ženskou postavu. Těch si zahrál opravdu hodně a dokonce po ně vymyslel termín "pepřenky". Hned další si zahrál v pythonovském SMYSLU ŽIVOTA a to v muzikálové scéně s písní Every Sperm is sacred. Opět film režíroval a právě tato scéna patří k vrcholům jeho režijní tvorby. Navíc zde vytvořil postavu zvracejícího pana Creosota, která se stala asi nejslavnější z tohoto snímku. V roce 1983 získal film zvláštní cenu poroty v Cannes.
+
+
+
+Jeho další režií byla komedie PERSONAL SERVICES o servírce, která otevře bordel zaměřený na perverzní požadavky zákazníků. Nedlouho poté natočil film ERIK THE VIKING, kde se opět projevila láska ke středověké době a absurdnímu humoru. Jeho posledním celovečením filmem jsou Žabákova dobrodružství, adaptace slavné dětské knížky. Sešli se zde všichni žijící Pythoni kromě Terryho Gilliama a Jones jim vévodil v hlavní roli Žabáka.
+
+
+
+Terry napsal také několik knih např. Pohádky či Fantstické historky. Natočil také dokumentární seiál Středověké osudy Terryho Jonese, kde se vyznal ze své lásky k historii. U nás se seriál vysílal na kanálu Discovery.
+
+
+
+Terry Jones je ženatý a má dvě děti. V říjnu 2006 mu byla diagnostikována rakovina střev, ale vše nasvědčuje tomu, že se uzdraví. Doufejme tedy, že se tak stane a Terry neskončí jako Graham Chapman.</field>
+  </object>
+  <object model="films.director" pk="3">
+    <field name="name" type="CharField">Andy Muschietti</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1973</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/093/886/93886041_82e3eb.jpg</field>
+    <field name="description" type="TextField">Andrés Muschietti (Spanish: [musˈkjeti];[1] born August 26, 1973) is an Argentine filmmaker who achieved wide recognition with the 2013 film Mama which he made with Neil Cross and his sister, producer and screenwriter Barbara Muschietti, based on their three-minute film of the same name. The short, which he made at age 35, had attracted the attention of Guillermo del Toro, who then served as executive producer on the feature adaptation.
+
+
+
+He gained further recognition for directing both films in the It film series, the first being the 2017 film adaptation of the Stephen King novel It, which became the highest-grossing horror film of all time,[2] and the second being its 2019 second part, It Chapter Two. Both are distributed by Warner Bros. Pictures and produced by New Line Cinema.
+
+
+
+In 2023, Muschietti directed the Warner Bros. film The Flash starring Ezra Miller, set in the DC Extended Universe.[3][4] He is set to direct a live-action adaptation of Attack on Titan, also for Warner Bros.,[5] a remake of The Howling for Netflix,[6] and The Brave and the Bold, a reboot of the Batman film series set in the DC Universe (DCU) franchise.[7]</field>
+  </object>
+  <object model="films.director" pk="4">
+    <field name="name" type="CharField">Peter Jackson</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1961</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/000/267/267332_69c50d.jpg</field>
+    <field name="description" type="TextField">"Neberiem to vážne. Raz som v Cannes videl Hellraisera III. Bolo to OK, dobrý film. Nevidel som na ňom nič zlé. Akurát mi nesedela tá jeho vážnosť. Nejaký chlapík, pobehujúci s klincami v hlave... Nemohol som si povedať: „To je fakt strašidelné.“ Keby som to točil ja, nechal by som Pinheada nabúrať do steny a všetky klince by sa mu zavŕtali do tváre. Okamžite rozmýšľam nad somarinkami a vtipmi - to som celý ja. Pochybujem, že by som sa niekedy prinútil natočiť seriózny horor." - Peter Jackson
+
+
+
+Narodil sa v roku 1961 v novozélandskom prímorskom mestečku Pukerua Bay. Je to šialenec, podivín. A miluje film tak, ako málokto iný. Jeho prvú kameru (super 8) mu kúpili rodičia na Vianoce 1969, keď mal osem rokov. Už vtedy ho lákalo vnímať svet cez malé okienko filmovej mašinky. Ako každého malého chlapca v tomto veku, aj jeho zaujímali hlavne špeciálne efekty. Lásku k nim si vyvinul vďaka klasickému King Kongovi z roku 1933. A ešte jeden film ovplyvnil jeho vzťah k filmu. Extrémne krvavá hororová satyra Dawn of the Dead Georgea Romera. Bol z nej znechutený a nadšený zároveň. Natoľko, že sa sám rozhodol natočiť si svoj vlastný, úžasne nechutný film.
+
+
+
+Vtedy mal 22 a piaty rok pracoval v lokálnych novinách The Evening Post, z čoho si hradil nakrúcanie. Historku o mimozemšťanoch, ktorí si z obyvateľov malého vidieckeho mestečka spravia hamburgery, vymýšľal kontinuálne, počas víkendových nakrúcaní na second-handovú 16 mm kameru Bolex za 250 USD. Hrali v nej zadarmo jeho kamaráti a obyvatelia Pukerua Bay. A tiež on sám - strihol si naraz rolu mimozemšťana i člena týmu elitného komanda, ktoré sa s vesmírnou háveďou vysporadúva. Svojich rodičov často nútil jesť na večeru toasty, pretože v kuchynskej trúbe „piekol“ latexové masky a modely zbraní. Ale staral sa nielen o špeciálne efekty. Tiež držal kameru, režíroval, strihal a ozvučoval.</field>
+  </object>
+  <object model="films.director" pk="5">
+    <field name="name" type="CharField">Quentin Tarantino</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1963</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/164/515/164515525_b98f8a.jpg</field>
+    <field name="description" type="TextField">Quentin Tarantino se narodil 27. března roku 1963 v americkém Knoxville teprve šestnáctileté Connie Tarantinové. Své jméno Quentin dostal podle matčiny oblíbené televizní postavy Quinta ze seriálu "Gunsmoke". Quentinův otec byl jistý Tony Tarantino, který rodinu opustil když byl Quentin ještě malinký. Jeho dětství a dospívání ovlivnily nejen filmy, ale pop kultura obecně. Televizní seriály, komiksy, populární hudba, to vše jako mladý hltal ve velkém a stále neměl dost. O nic jiného se nezajímal a tehdy už bylo téměř jasné, že tenhle člověk skončí u filmu. Quentin odmítal jíst cokoliv jiného než Hot-Dogy nebo hamburgery. Bezradná Connie proto musela všechna ostatní jídla nazývat těmito dvěma jmény, aby Quentin něco snědl. Pěkné začátky popkulturního tvůrce, který to neměl vůbec jednoduché, ale nepředbíhejme.
+
+
+
+V Los Angeles začal navštěvovat školu herectví a přivydělával si jako vyhazovač v pornokině. Po skončení studia si dvaadvacetiletý Quentin našel práci v prestižní videopůjčovně VideoArchives na Manhattan Beach (kde získal přezdívku "magor z videopůjčovny"), kde nonstop sledoval filmy, znal nespočet filmů (dokázal odvyprávět každou scénu). Lidé říkavali, že je to jeho "filmová škola", ale Quentin řekl, že je to spíš jeho žurnál a on hlavním kritikem. Zde se seznámil s Rogerem Avarym, se kterým začal psát scénáře. Společně tráví celé dny přisátí očima k obrazovce televize. Sledují všechny možné filmy, které jim přišly pod ruku. Quentin si pouští řadu scén několikrát, zpomaleně, pozpátku, studoval tvar scény, ale i střih, hudbu, hereckou práci, vedení dialogu - prostě všechno možné. Jak sám řekl: „Když se mě lidi ptají, zda jsem chodil do filmové školy, odpovídám, že jsem chodil na filmy.“
+
+
+
+Později se Tarantino přihlásil na kurzy herectví, aby dostával aspoň nějaké role, byl nucený i lhát. Když psali s Rogerem Avarym scénáře, chtěli je i skutečně zrealizovat, ale žádné studio na Quentinovy scénáře nepřistoupilo. Tak se rozhodli natočit film sami. Jmenoval se MY BEST FRIEND'S BIRTHDAY, ten však po vyvolání Quentin nedokáže sestříhat do konečné verze, protože studio ve kterém stříhal svůj film zachvátil požár a drtivá většina materiálu lehla popelem.
+
+
+
+Quentina to zdaleka neodradilo a píše scénáře dál, kdy využívá některé myšlenky právě z MY BEST FRIEND'S BIRTHDAY a píše scénář ke krvavé road-movie s názvem PRAVDIVÁ ROMANCE (později zrežíroval Tony Scott), který prodává. Asi o rok později pracuje na scénáři k filmu TAKOVÍ NORMÁLNÍ ZABIJÁCI (zrežíroval Oliver Stone), který posléze také prodá za malé peníze, navíc bez šance zabránit úpravám scénářů. Proti Scottově úpravě filmu neměl námitky, ale na rozsáhlých úpravách Stonea ke scénáři nenechal nitku suchou: „Kdyby mi ho alespoň ukradl“, řekl při této příležitosti.</field>
+  </object>
+  <object model="films.genre" pk="1">
+    <field name="name" type="CharField">Comedy</field>
+  </object>
+  <object model="films.genre" pk="2">
+    <field name="name" type="CharField">Adolescent</field>
+  </object>
+  <object model="films.genre" pk="3">
+    <field name="name" type="CharField">Fantasy</field>
+  </object>
+  <object model="films.genre" pk="4">
+    <field name="name" type="CharField">horror</field>
+  </object>
+  <object model="films.genre" pk="5">
+    <field name="name" type="CharField">drama</field>
+  </object>
+  <object model="films.genre" pk="6">
+    <field name="name" type="CharField">krimi</field>
+  </object>
+  <object model="films.comment" pk="1">
+    <field name="author" type="CharField">Matěj Bittner</field>
+    <field name="text" type="TextField"></field>
+    <field name="rating" type="IntegerField">100</field>
+    <field name="created_at" type="DateTimeField">2023-05-17T07:26:36.643000+00:00</field>
+    <field name="movie" rel="ManyToOneRel" to="films.movie">5</field>
+  </object>
+  <object model="films.comment" pk="2">
+    <field name="author" type="CharField">Matěj Bittner</field>
+    <field name="text" type="TextField"></field>
+    <field name="rating" type="IntegerField">100</field>
+    <field name="created_at" type="DateTimeField">2023-05-17T07:27:57.875000+00:00</field>
+    <field name="movie" rel="ManyToOneRel" to="films.movie">5</field>
+  </object>
+  <object model="films.comment" pk="3">
+    <field name="author" type="CharField">Matěj Bittner</field>
+    <field name="text" type="TextField"></field>
+    <field name="rating" type="IntegerField">100</field>
+    <field name="created_at" type="DateTimeField">2023-05-17T07:39:08.860000+00:00</field>
+    <field name="movie" rel="ManyToOneRel" to="films.movie">5</field>
+  </object>
+  <object model="films.comment" pk="4">
+    <field name="author" type="CharField">Pepa z Depa</field>
+    <field name="text" type="TextField"></field>
+    <field name="rating" type="IntegerField">50</field>
+    <field name="created_at" type="DateTimeField">2023-05-17T07:40:03.833000+00:00</field>
+    <field name="movie" rel="ManyToOneRel" to="films.movie">5</field>
+  </object>
+  <object model="films.comment" pk="6">
+    <field name="author" type="CharField">Václav Chalupníček</field>
+    <field name="text" type="TextField"></field>
+    <field name="rating" type="IntegerField">100</field>
+    <field name="created_at" type="DateTimeField">2023-05-17T15:45:06.498000+00:00</field>
+    <field name="movie" rel="ManyToOneRel" to="films.movie">5</field>
+  </object>
+  <object model="films.actor" pk="1">
+    <field name="name" type="CharField">John Travolta</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1954</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/163/607/163607019_d7313d.jpg</field>
+    <field name="description" type="TextField">Travoltova herecká kariéra začala malou roličkou v slávnom thrilleri Briana De Palmi CARRIE (1976) a hneď nato sa dostala do hviezdnych dimenzií vďaka HORÚČKE SOBOTŇAJŠEJ NOCI (1977). Bol to doslova raketový štart - Travoltov presvedčivý drsný taliansko-americký šarm v kombinácii s citlivým vnútrom a obdivuhodným tanečným nadaním z neho spravili idol mládeže a film sa stal kultovou ikonou sedemdesiatych rokov. John bol navyše za svoju rolu nominovaný na Oscara, takže o skutočnom hereckom nadaní nebolo pochýb.
+
+
+
+Po úspechu Horúčky bola Travoltovi okamžite ponúknutá veľmi podobná rola a tak uzrela svetlo sveta POMÁDA (1978) s Oliviou Newton-Johnovou. Úspech bol ohromný - film sa stal jedným z najziskovejších hollywoodskych muzikálov všetkých čias. Potom ale niečo zašramotilo a po Johnovi sa po dvoch filmových prepadákoch (VÝBUCH, MESTSKÝ KOVBOJ) akoby zem zľahla. Jeho kariéra sa ocitla v troskách. Bol označovaný za teenagerskú hviezdu jednej generácie, za hviezdu včerajška. Nakrúcal podradné snímky, z ktorých najväčšími „hitmi“ sa stali tri komédie zo série POZRI KTO TO HOVORÍ... A potom mu zrazu prišiel do schránky Tarantinov scenár k filmu PULP FICTION.
+
+
+
+Johnovi sa doň spočiatku moc nechcelo a Tarantino mal čo robiť, aby ho prehovoril. Nakoniec sa mu to však (ako všetci veľmi dobre vieme) podarilo a Travolta si v jeho filme strihol postavu mastnovlasatého gangstra Vincenta Vegu. Výsledok: nominácia na Oscara, nadšení filmoví diváci po celom svete a šalejúce fanynky všetkých vekových skupín. Neuveriteľné sa stalo skutočnosťou a Travolta sa ocitol späť!</field>
+  </object>
+  <object model="films.actor" pk="2">
+    <field name="name" type="CharField">Viggo Mortensen</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1958</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/163/212/163212070_5586a6.png</field>
+    <field name="description" type="TextField">To prvé a najhlavnejšie, čím sa líši od väčšiny svojich kolegov, je jeho angažovanie sa v množstve nehereckých umeleckých aktvít. Viggo totiž nie je iba čoraz populárnejší herec, ale je tiež básnik, fotograf, maliar a hudobník. Veľa inšpirácie pre vkladanie svojich pocitov do umeleckých výtvorov mu určite dodalo aj pestré detstvo, ktoré strávil hneď v niekoľkých svetadieloch sveta. Narodil sa v New Yorku, od dvoch do jedenástich rokov cestoval s rodinou po juhoamerických krajinách ako Venezuela a Argentína a neskôr žil i v Dánsku, kde pracoval ako šofér kamiónu (jeho matka je Američanka a otec Dán). Aj vďaka tomu ostatne rozpráva plynule španielsky i dánsky.
+
+
+
+Herectvo začal študovať po návrate do New Yorku. Hoci bola jeho prvá rolička iba vedľajšou, Mortensen mal šťastie, že išlo zrovna o veľmi úspešný film Petera Weira s Harrisonom Fordom v hlavnej úlohe – SVEDOK. K hviezdnej sláve ho nedostal, no dvierka do Hollywoodu mu rozhodne pootvoril. Viggo sa vzdal svojho zbožňovaného New Yorku a dal sa na bývanie v Los Angeles. Bol si totiž vedomý toho, že pokiaľ chce uspieť v hollywoodskej branži, je práve toto miesto tým jediným východzím bodom.
+
+
+
+Vedľajšími roličkami sa predieral hodne dlhú dobu a prediera sa nimi dodnes. A práve preto je obdivuhodné sledovať, ako sa prostredníctvom nich dokázal vypracovať na filmovú hviezdu. K filmom, na ktoré je najviac hrdí, patrý napríklad INDIÁNSKY BEŽEC z roku 1991. Ide síce o malú nezávislú snímku, no jej status v rámci súčasnej kinematografie dosahuje takmer kultových rozmerov. Sean Penn, pre ktorého bola režijným debutom, v nej sympatického Mortensena obsadil do úlohy násilníckeho vietnamského veterána Franka.
+
+
+
+Kto by si nepochvaľoval spoluprácu s takou legendou ako Al Pacino? Mortensen sa s ním ocitol na jednom placi pri nakrúcaní majstrovskej krimi gangsterky Briana De Palmu CARLITOVA CESTA. Síce išlo iba o naozaj malú roličku a navyše v nej bol pripútaný na invalidný vozík, no názov filmu sa v jeho filmografii trblieta ako nádherný diamant. Snímkou, v ktorej ste si Vigga mohli (tak ako ja) lepšie všimnúť po prvýkrát, mohol byť tiež KARMÍNOVÝ PRÍLIV z roku 1995. Súboj dvoch vojenských autorít Gena Hackmana a Denzela Washingtona v ponorkovom thrilleri o potenciálnom rozpútaní tretej svetovej vojny bol presýtený hneď viacerými skvelými vedľajšími hercami. Ale popri spomínaných dvoch filmových megahviezdach to bol práve Viggo, kto na seba ako racionálny vojak so silným charakterom upozornil najviac z celej posádky. Film sa, podobne ako všetky snímky producenta Jerryho Bruckheimera (SKALA, CON AIR, ARMAGEDDON), stal obrovským kasovým trhákom a pre Viggovu kariéru bol dovtedy najprínosnejším projektom.
+
+
+
+Pozoruhodné nie je iba Viggove pestré všeobecné angažmá v umeleckých kruhoch, ale aj široké žánrové spektrum jeho filmografie. Popri hollywoodskych hitovkách ako KARMÍNOVÝ PRÍLIV a CARLITOVA CESTA sa totiž objavil aj po boku Nicole Kidmanovej v dobovej dráme Jane Campionovej PORTRÉT DÁMY. Podobne ako pri INDIÁNSKOM BEŽCOVI, ani tu nezarobil milióny, no získal si úctu kritikov po celom svete. A do tohto projektu išiel určite s vedomím že sa tak stane, pretože Jane Campionová (PIÁNO) nezvykne nakrúcať filmy, ktoré by ušli pozornosti filmových fajnšmekrov a kritikov.</field>
+  </object>
+  <object model="films.actor" pk="3">
+    <field name="name" type="CharField">Graham Chapman</field>
+    <field name="slug" type="SlugField">1941</field>
+    <field name="birth_year" type="IntegerField">1989</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/000/270/270757_47542a.jpg</field>
+    <field name="description" type="TextField">Graham Chapman se narodil 8. ledna 1941 v Leicesteru (čti Lestr) v Anglii během německého bombového náletu. Jeho otec byl vrchní inspektor policie a pravděpodobně hodně inspiroval následně Grahamem hrané úřední osoby v sérii komediálních skečů. Graham úspěšně dostudoval lékařskou univerzitu a získal titul Mudr (v Anglii M.D. – Medical Doctor), ale praktikoval jenom několik let.
+
+
+
+V Cambridgi spolupracoval na sérii komediálních revue a krátce po dokončení studií v St. Bartholomew's Hospital si uvědomil, čemu chce zasvětit svůj budoucí život. Chtěl bavit lidi. V roce 1969 Graham společně s přáteli ze školy (John Cleese, Eric Idle, Michael Palin, Terry Jones a Terry Gilliam) vytvořili vlastní komediální skupinu nazvanou Monty Python. Jejich televizní série BBC nazvaná Monty Pythonův Létající Circus se nedlouho po uvedení stala celosvětovým hitem. Jejich styl humoru byl originální a přístupný většině publika Velké Británie (a nejen jí, jejich humor je pochopitelný každému na světě). Novátorské jsou například náhlé konce skečů, když je nenapadla žádná inteligentní a zároveň vtipná pointa - herci prostě vstali a odešli s tím, že v hloupějším skeči ještě nehráli.
+
+
+
+O Grahamovi bylo dlouho známo, že je gay a sám se tím také nijak netajil a to již dlouho předtím, než se to stalo společensky únosné. Žil 24 let se spisovatelem Davidem Sherlockem a spolu také adoptovali mladého uprchlíka Johna Tomiczeka. Graham hrál hlavní roli ve dvou následujících filmech Monty Pythonů, ve SVATÉM GRÁLU ztvárnil krále Artuše a v ŽIVOTĚ BRIANA hrál Briana z Nazarethu. Tento film parodující život Ježíše Krista byl na mnoha místech Země zakázán a v Americe se pořádaly obrovské protestní akce a diskuze v televizi a v různých parcích k davům proti tomuto kacířství. V Anglii dokonce fanoušci jezdili z míst, kde to bylo zakázáno do míst, kde ho povolili. Koncem sedmdesátých let se většina členů skupiny vrhla na vlastní nezávislé projekty a Monty Python tak upadal v zapomnění (tvůrčí, ne fanouškovské). V roce 1982 také vystoupili naživo v Hollywoodu, kde sklidili bouřlivé ovace. O rok později natočili ještě SMYSL ŽIVOTA PODLE MONTY PYTHONA, ale tento film již nezaznamenal stejný úspěch, jako předchozí počiny.
+
+
+
+Graham hrál v několika dalších filmech, ale neobdržel příliš dobré ohlasy ani od publika ani od kritiky. Přesto se od celuloidu nikdy příliš nevzdálil a psal "alespoň" scénáře pro různé zábavné pořady nebo komediální seriály jako MARTY, DOCTOR AT LARGE, DOCTOR AT CHARGE atd. Napsal i divadelní hru O HAPPY DAY, která měla premiéru jedenáct let po jeho smrti v divadle Dad's Garage Theatre v Atlantě.
+
+
+
+V roce 1988 začal tvořit novou zábavnou sérii, ale jeho zdraví se rychle zhoršovalo. Alkoholismus, kterého se mu povedlo zbavit v roce 1977, mu poškodil játra a narušil zdraví. V listopadu 1988, při pravidelné zubařské prohlídce mu lékař našel maligní (zhoubný oproti benigní, znamená, že vypouští do těla mnoho dalších rakovinotvorných buněk) tumor na mandlích, který mu chirurgicky odstranili. Další lékařská prohlídka odhalila tumor u páteře, jehož odstranění jej upoutalo na kolečkové křeslo. Většinu roku 1989 strávil na operačním sále a na chemoterapii při ničení stále nově se objevujících nádorů. Prvního října toho roku byl hospitalizován se silným krvácením do mozku. Zemřel ve věku osmačtyřiceti let 4. října 1989 jeden den před dvacátým výročím skupiny Monty Python.
+
+
+
+Hrát v televizi ale nepřestal ani po své smrti, když se objevil v několika setkáních Monty Pythonu. Jak sám řekl: "Doufám, že dokážu něco trvalého." A dokázal to. Jeho humor nás baví dodnes a bude ještě mnoho dalších let.</field>
+  </object>
+  <object model="films.actor" pk="4">
+    <field name="name" type="CharField">Emma Watson</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1990</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/164/022/164022697_33857e.jpg</field>
+    <field name="description" type="TextField">Emma strávila dětství v britském Oxfordu, kam se ve svých pěti letech přestěhovala po rozvodu svých rodičů z Paříže. Když se v devíti letech dozvěděla, že byla vybrána do hlavní ženské role ve fantasy sáze Harry Potter, neměla pravděpodobně vůbec tušení, do jaké míry to změní její život a jaké dveře se před ní díky tomu otevřou. První díl dorazil do kin v roce 2001. Následovalo v přibližně dvouletých intervalech sedm dalších pokračování. Finančně nejúspěšnější filmová sága všech dob dospěla do svého finále v roce 2011. Jenom za poslední dvě části vyinkasovala Emma 30 miliónů dolarů. V roce 2009 byla nejlépe placenou herečkou v Hollywoodu. Její první rolí mimo svět čarodějného učně byla v roce 2007 televizní adaptace románu od Heidi Thomas Baletní Střevíčky. O rok později propůjčila svůj hlas princezně v animované pohádce Příběh o Zoufálkovi.
+
+
+
+V roce 2009 se stala tváří módní značky Burberry pro podzimní kolekci. Ve stejném roce začala spolupracovat se sociálním hnutím Fair Trade, které propaguje produkty a potraviny ze zemí třetího světa, včetně dodržování sociálních a environmentálních standardů. Od té doby Emma spolupracovala na celé řadě projektů a kolekcí a její jméno je spjato s takovými značkami jako jsou Lancome nebo Vogue.
+
+
+
+V roce 2011 se objevila v menší roli maskérky Lucy ve filmu My Week with Marylin. Následně si vzala roční pauzu, aby se mohla soustředit na studium na americké univerzitě Brown, kam nastoupila v roce 2009. Na sklonku roku 2012 se vrátila na filmové plátno v adaptaci stejnojmenného románu The Perks of Being Wallflower. V roce 2013 si Emma splnila jeden ze svých životních snů. Tím byla spolupráce s americkou režisérkou a scénáristkou Sofii Coppolou ve filmu Bling Ring: Jako VIPky, založeném na skutečném příběhu skupiny teenagerů vykrádajících domy slavných celebrit. Ve stejném roce si zahrála samu sebe v bláznivé komedii Apokalypsa v Hollywoodu, kterou režíroval Seth Rogen.
+
+
+
+Emma je ženou mnoha tváří. Navzdory slibně se rozvíjející herecké kariéře, není stříbrné plátno jejím jediným zájmem. Rejstřík jejích aktivit je značně široký a obsahuje např. modeling, návrhářství, charitu nebo spolupráci s neziskovými organizacemi.
+
+
+
+V blízké budoucnosti se objeví v biblickém drama Noah, ve kterém si zahraje po boku Russela Crowea a Jennifer Connely. Zajímavou hereckou zkušeností bude nová adaptace knihy Kráska a Zvíře pod režisérskou taktovkou Guillerma de Tora. Posledním známý projektem bude filmová verze románu Queen of the Tearling. Emma by se měla zhostit hlavní role a společně s Davidem Heymanem, který byl výkonným producentem Harryho Pottera, plánují film i produkovat.</field>
+  </object>
+  <object model="films.actor" pk="5">
+    <field name="name" type="CharField">John Cleese</field>
+    <field name="slug" type="SlugField">0</field>
+    <field name="birth_year" type="IntegerField">1939</field>
+    <field name="photo_url" type="CharField">https://image.pmgstatic.com/cache/resized/w100h132crop/files/images/creator/photos/166/177/166177188_5635d6.jpg</field>
+    <field name="description" type="TextField">"Nemyslím, že by každý měl být sexuálně vzděláván. Na to je na světě příliš mnoho lidí. Pokud s tím na pár let přestaneme, třeba se to změní.“</field>
+  </object>
+</django-objects>
